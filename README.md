@@ -1,4 +1,6 @@
-# ReCoDE project keywords and College Departmental keywords
+# [ReCoDE](https://imperialcollegelondon.github.io/ReCoDE-home/) project keywords and College Departmental keywords
+
+ReCoDE project's page is [https://imperialcollegelondon.github.io/ReCoDE-home/](https://imperialcollegelondon.github.io/ReCoDE-home/)
 
 Using the keywords extracted by GenAI models (LlaMa3, copilot) to calculate the Euclidean distance between each project and the keyword categories about the research domains at the college. The results will be plotted in a radar chart. Codespace will display the radar chart, but doesn't work when loading a radar chart with selections to display a radar chart for each project. To view each radar chart for every project using the selection, a local deployment is needed.
 
