@@ -1,5 +1,5 @@
-﻿projects,title,description,requirements,keywords (LlaMA3-8B),keywords-copilot-ms,Engineering,Computing,Clinical Sciences,Public Health,Mathematics,Business and Management,Physics,Chemistry,Materials,Bioengineering
-1,Environmental Literature Analysis with BERTopic & RoBERTa,"Explosive literature in Environmental and Sustainability Studies
+,projects,title,description,requirements,keywords..LlaMA3.8B.,keywords.copilot.ms,Engineering,Computing,Clinical.Sciences,Public.Health,Mathematics,Business.and.Management,Physics,Chemistry,Materials,Bioengineering,Python,R,Fortran,C_Plus_Plus
+1,1,Environmental Literature Analysis with BERTopic & RoBERTa,"Explosive literature in Environmental and Sustainability Studies
 The field of environmental and sustainability studies has witnessed an explosive growth in literature over the past few decades, driven by the increasing global awareness and urgency surrounding environmental issues, climate change, and the need for sustainable practices.
 
 This rapidly expanding body of literature is characterized by its interdisciplinary nature, encompassing a wide range of disciplines such as ecology, climate science, energy, economics, policy, sociology, and more. With a global focus and contributions from countries around the world, the literature base reflects diverse cultural, socio-economic, and geographical contexts, often in multiple languages. Novel research areas and emerging topics, such as circular economy, sustainable urban planning, environmental justice, biodiversity conservation, renewable energy technologies, and ecosystem services, continue to arise as environmental challenges evolve and our understanding deepens. The development of environmental policies, regulations, and international agreements, as well as increased public interest and awareness, have further fueled research and the demand for literature aimed at informing and engaging various stakeholders. Technological advancements in areas like remote sensing, environmental monitoring, and computational modelling have enabled new avenues of research and data-driven studies, contributing to the proliferation of literature. The rise of open access publishing and digital platforms has facilitated the dissemination and accessibility of this constantly evolving and interdisciplinary body of knowledge.
@@ -116,8 +116,8 @@ Tokenisation
 Normalisation techniques
 Critical analysis skills
 Visualisations
-Reports",0.6,0.7,0.5,0.8,0.7,0.6,0.6,0.5,0.5,0.7
-2,Cracking Time's Code: Survival Analysis of Large Datasets,"This is a special type of analysis that takes into consideration when the event occurred rather than if the event occurred. In other words, we are focused on acquiring the rate, which is the number of events per unit time. In this exemplar will introduce you to the concept of survival analysis (also known as a time-to-event analysis) using large data sets using R.
+Reports",0.6,0.7,0.5,0.8,0.7,0.6,0.6,0.5,0.5,0.7,1,0.05,0.05,0.05
+2,2,Cracking Time's Code: Survival Analysis of Large Datasets,"This is a special type of analysis that takes into consideration when the event occurred rather than if the event occurred. In other words, we are focused on acquiring the rate, which is the number of events per unit time. In this exemplar will introduce you to the concept of survival analysis (also known as a time-to-event analysis) using large data sets using R.
 
 Firstly, I will highlight the steps needed to effectively clean the data, including correct censoring of the participants.
 
@@ -176,8 +176,8 @@ Learning outcomes
 Types of censoring
 Data curation
 Graphical presentation
-Result interpretation",0.5,0.7,0.8,0.9,0.8,0.6,0.6,0.5,0.4,0.7
-3,Hand-eye Calibration of Medical Robots,"Hand-eye calibration is a well-studied topic in the field of robotics. Applications that involve the use cameras typically require conducting hand-eye calibration beforehand. This project presents a pipeline for conducting hand-eye calibration using a bespoke marker for a medical robot (the first generation da Vinci research kit).The method presented in this project aims to conduct registration between two sets of point cloud using singular value decomposition (SVD). This project aims to instruct students to understand basic knowledge of hand-eye calibration and grasp essential skills in using computer vision libraries such as OpenCV and Point Cloud library in C++. Hand-eye calibration results can be visualised through 2D back projections. 
+Result interpretation",0.5,0.7,0.8,0.9,0.8,0.6,0.6,0.5,0.4,0.7,0.05,1,0.05,0.05
+3,3,Hand-eye Calibration of Medical Robots,"Hand-eye calibration is a well-studied topic in the field of robotics. Applications that involve the use cameras typically require conducting hand-eye calibration beforehand. This project presents a pipeline for conducting hand-eye calibration using a bespoke marker for a medical robot (the first generation da Vinci research kit).The method presented in this project aims to conduct registration between two sets of point cloud using singular value decomposition (SVD). This project aims to instruct students to understand basic knowledge of hand-eye calibration and grasp essential skills in using computer vision libraries such as OpenCV and Point Cloud library in C++. Hand-eye calibration results can be visualised through 2D back projections. 
 
 Learning Outcomes
 Understand what hand-eye calibration is and prevalent school of thoughts in solving this problem.
@@ -220,8 +220,8 @@ Learning outcomes
 Basic knowledge
 Prevalent schools of thought
 Object-oriented project
-Essential skills",0.8,0.9,0.6,0.5,0.7,0.4,0.7,0.5,0.6,0.8
-4,Turing Patterns & Partial Differential Equations,"This code is a component of the Research Computing and Data Science Examples (ReCoDE) project. It comprises a non-linear partial differential equation (PDE) solver implemented in Fortran, designed to address both boundary value problems (BVP) and initial boundary value problems (IBVP) with temporal progression. The solver's versatility allows it to handle problems in one or two dimensions and can accommodate single equations or pairs of coupled equations. This exemplar showcases several key features of the code, including:
+Essential skills",0.8,0.9,0.6,0.5,0.7,0.4,0.7,0.5,0.6,0.8,0.05,0.05,0.05,1
+4,4,Turing Patterns & Partial Differential Equations,"This code is a component of the Research Computing and Data Science Examples (ReCoDE) project. It comprises a non-linear partial differential equation (PDE) solver implemented in Fortran, designed to address both boundary value problems (BVP) and initial boundary value problems (IBVP) with temporal progression. The solver's versatility allows it to handle problems in one or two dimensions and can accommodate single equations or pairs of coupled equations. This exemplar showcases several key features of the code, including:
 
 Integration with the Fortran Package Manager (FPM)
 Utilization of LAPACK libraries
@@ -299,8 +299,8 @@ Solving mathematical problems
 Generalising problems
 Discretisation
 External libraries (LAPACK and BLAS)
-Testing Fortran code",0.8,0.9,0.6,0.5,0.8,0.4,0.7,0.5,0.6,0.8
-5,Deep Learning Best Practices,"This project aims to showcase best practices and tools essential for initiating a successful deep learning project. It will cover the use of configuration files for project settings management, adopting a modular code architecture, and utilizing frameworks like Hydra for efficient configuration. The project will also focus on effective result logging and employing templates for project structuring, aiding in maintainability, scalability, and collaborative ease.
+Testing Fortran code",0.8,0.9,0.6,0.5,0.8,0.4,0.7,0.5,0.6,0.8,0.05,0.05,1,0.05
+5,5,Deep Learning Best Practices,"This project aims to showcase best practices and tools essential for initiating a successful deep learning project. It will cover the use of configuration files for project settings management, adopting a modular code architecture, and utilizing frameworks like Hydra for efficient configuration. The project will also focus on effective result logging and employing templates for project structuring, aiding in maintainability, scalability, and collaborative ease.
 
 Learning outcomes
 Using Wandb to Log Training Metrics and Images
@@ -397,8 +397,8 @@ Computational efficiency
 Minimal Lightning Hydra Template
 Project initialization
 Directory structures
-Sample code",0.8,0.9,0.6,0.5,0.8,0.4,0.7,0.5,0.6,0.8
-6,SPH-SOLVER-2D-NS,"In this project we present a numerical code in C++ which solves the two-dimensional Navier-Stokes equations using the smoothed-particle hydrodynamics (SPH) approach. The focus lies in the implementation (and documentation) of good C++ practices and the development of skills related to efficient, robust, extensible and readable scientific code. The learning process regarding this project can be twofold:
+Sample code",0.8,0.9,0.6,0.5,0.8,0.4,0.7,0.5,0.6,0.8,1,0.05,0.05,0.05
+6,6,SPH-SOLVER-2D-NS,"In this project we present a numerical code in C++ which solves the two-dimensional Navier-Stokes equations using the smoothed-particle hydrodynamics (SPH) approach. The focus lies in the implementation (and documentation) of good C++ practices and the development of skills related to efficient, robust, extensible and readable scientific code. The learning process regarding this project can be twofold:
 
 1) The student can study the material provided in the main branch of the present repository. It is independent of all the other branches and can be used as a standalone educational resource. In this the implemented SPH methodology is explained as well as the structure of the source code and the post-processing scripts.
 
@@ -458,8 +458,8 @@ I/O (input/output)
 OOP (object-oriented programming)
 C++ containers
 Performance optimization
-Memory optimization",0.9,0.8,0.4,0.3,0.8,0.4,0.7,0.5,0.6,0.7
-7,Hidden Markov Models for the discovery of behavioural states,"This is an exemplar project to help you understand the concepts behind the Hidden Markov Model (HMM), how to implement one with the python package hmmlearn, and finally how to explore the decoded data.
+Memory optimization",0.9,0.8,0.4,0.3,0.8,0.4,0.7,0.5,0.6,0.7,1,0.05,0.05,1
+7,7,Hidden Markov Models for the discovery of behavioural states,"This is an exemplar project to help you understand the concepts behind the Hidden Markov Model (HMM), how to implement one with the python package hmmlearn, and finally how to explore the decoded data.
 
 HMMs are widely used in multiple fields, including biology, natural language processing, and finance as a predictor of future states in a sequence. However, here we will be utilising the hidden model states to create a hypothesied internal behavioural architecture.
 
@@ -527,8 +527,8 @@ Basic understanding of Python
 Core concepts of HMMs
 Curating data
 Training/validating HMM
-Visualising decoded data ",0.7,0.9,0.5,0.4,0.8,0.5,0.6,0.4,0.5,0.7
-8,Decoding Market Signals,"This project aims to rigorously back-test a trading strategy, focusing on evaluating the informational value of candlestick patterns. Utilising Python, a pipeline of functions will systematically scan and evaluate the components of the S&P 500 stock market index for patterns upon which one can base a trading decision.
+Visualising decoded data ",0.7,0.9,0.5,0.4,0.8,0.5,0.6,0.4,0.5,0.7,1,0.05,0.05,0.05
+8,8,Decoding Market Signals,"This project aims to rigorously back-test a trading strategy, focusing on evaluating the informational value of candlestick patterns. Utilising Python, a pipeline of functions will systematically scan and evaluate the components of the S&P 500 stock market index for patterns upon which one can base a trading decision.
 
 Advanced functionalities of the Pandas library will be employed to load, manipulate and store detailed statistical data, particularly method chains, multi-indexed data frames and user-defined functions acting on rows and columns of data frames.
 
@@ -597,8 +597,8 @@ Technical analysis library
 C++
 High-quality financial data
 Data manipulation
-Testing and analysing trading actions ",0.7,0.9,0.4,0.3,0.8,0.6,0.7,0.5,0.6,0.7
-9,Binary Classification of Patent Texts,"There were 193,460 European patent applications filed at the European Patent Office in 2022.
+Testing and analysing trading actions ",0.7,0.9,0.4,0.3,0.8,0.6,0.7,0.5,0.6,0.7,1,0.05,0.05,0.05
+9,9,Binary Classification of Patent Texts,"There were 193,460 European patent applications filed at the European Patent Office in 2022.
 
 The EPO, and several other agencies are really interested in trends associated with the filings of patents to specific areas such as ‚ÄòGreen Plastics‚Äô (e.g., plastics that can be recycled, or that are made from biodegradable materials).
 
@@ -706,8 +706,8 @@ Long Short Term Memory Networks (LSTMs)
 One-Dimensional Convolutional Neural Networks (1D-CNN)
 Transformers
 Attention
-Softmax layer ",0.85,0.95,0.6,0.4,0.7,0.5,0.65,0.55,0.6,0.75
-10,CNNs for the Cosmic Dawn,"This exemplar will explain and demonstrate the steps required to go from image-based data to a finished Convolutional Neural Network (CNN) pipeline, which can be used to extract relevant information from the images. While demonstrating how to solve this machine learning problem, I will also explain how to prototype code in Jupyter notebooks. I will start by explaining how to analyse the statistics of the data to create appropriate training, validation and testing sets; here I will emphasize the importance of uniform parameter spaces. The exemplar will then go through the process of setting up the architecture of the network and how to train it. Once the network is trained I will discuss what possible next steps are, and which is the most appropriate. Finally, I will go through how to convert the code prototyped in Jupyter notebooks into a useable package
+Softmax layer ",0.85,0.95,0.6,0.4,0.7,0.5,0.65,0.55,0.6,0.75,1,0.05,0.05,0.05
+10,10,CNNs for the Cosmic Dawn,"This exemplar will explain and demonstrate the steps required to go from image-based data to a finished Convolutional Neural Network (CNN) pipeline, which can be used to extract relevant information from the images. While demonstrating how to solve this machine learning problem, I will also explain how to prototype code in Jupyter notebooks. I will start by explaining how to analyse the statistics of the data to create appropriate training, validation and testing sets; here I will emphasize the importance of uniform parameter spaces. The exemplar will then go through the process of setting up the architecture of the network and how to train it. Once the network is trained I will discuss what possible next steps are, and which is the most appropriate. Finally, I will go through how to convert the code prototyped in Jupyter notebooks into a useable package
 
 Learning Outcomes
 Use a Jupyter Lab notebook to prototype code
@@ -752,8 +752,8 @@ Jupyter Lab notebook
 Tensorflow
 Simulated images
 Runnable script
-High-Performance Computing (HPC)",0.85,0.95,0.4,0.3,0.75,0.5,0.65,0.45,0.55,0.6
-11,Solving SDEs with Euler-Maruyama,"This code is part of the Research Computing and Data Science Examples (ReCoDE) projects. The project consists of a Python class containing the Euler-Maruyama (EM) method for the numerical solution of a Stochastic Differential Equation (SDE). SDEs describe the dynamics that govern the time-evolution of systems subjected to deterministic and random influences. They arise in fields such as biology, physics or finance to model variables exhibiting uncertain and fluctuating behaviour. Being able to numerical solve an SDE is essential for these fields, especially if there is no closed-form solution. This project provides an object-oriented implementation of the EM method. Throughout the project, it is emphasised the benefits that class encapsulation provides in terms of code modularity and re-usability.
+High-Performance Computing (HPC)",0.85,0.95,0.4,0.3,0.75,0.5,0.65,0.45,0.55,0.6,1,0.05,0.05,0.05
+11,11,Solving SDEs with Euler-Maruyama,"This code is part of the Research Computing and Data Science Examples (ReCoDE) projects. The project consists of a Python class containing the Euler-Maruyama (EM) method for the numerical solution of a Stochastic Differential Equation (SDE). SDEs describe the dynamics that govern the time-evolution of systems subjected to deterministic and random influences. They arise in fields such as biology, physics or finance to model variables exhibiting uncertain and fluctuating behaviour. Being able to numerical solve an SDE is essential for these fields, especially if there is no closed-form solution. This project provides an object-oriented implementation of the EM method. Throughout the project, it is emphasised the benefits that class encapsulation provides in terms of code modularity and re-usability.
 
 Learning Outcomes
 This project is designed for Master's and Ph.D. students with basic Python knowledge and need to solve SDEs for their research projects. After going through this project, students will:
@@ -808,8 +808,8 @@ Ph.D. students
 Basic Python knowledge
 Solve SDEs
 Parallelise code
-Improve solution speed",0.8,0.9,0.3,0.25,0.85,0.4,0.7,0.5,0.55,0.45
-12,Multi-channel Python GUI,"In this course, you will learn how to create a GUI program to display and analyze data in real-time with Python. The GUI program is designed to display and analyze data from a file. The GUI program is also designed to display data from a data acquisition system through serial port communication. The GUI program is developed using dearpygui, a GPU-based Python GUI framework.
+Improve solution speed",0.8,0.9,0.3,0.25,0.85,0.4,0.7,0.5,0.55,0.45,1,0.05,0.05,0.05
+12,12,Multi-channel Python GUI,"In this course, you will learn how to create a GUI program to display and analyze data in real-time with Python. The GUI program is designed to display and analyze data from a file. The GUI program is also designed to display data from a data acquisition system through serial port communication. The GUI program is developed using dearpygui, a GPU-based Python GUI framework.
 
 By the end of this course, you will be able to design a GUI program looks like the above picture, which can display data from a file or a data acquisition system in real-time. You will also be able to select the file to display, select the channels to display, change the color of the lines, and start, stop, and pause the display. You will also learn how to add data analysis functions to the GUI program and display analysis results in real-time.
 
@@ -923,8 +923,8 @@ Jupyter Lab notebook
 Tensorflow
 Simulated images
 Runnable script
-High-Performance Computing (HPC)",0.85,0.95,0.3,0.25,0.7,0.4,0.6,0.45,0.55,0.5
-13,RNA-seq Analysis,"The RNA-seq analysis exemplar involves the development of a pipeline for processing large volumes of biological data. The development of next generation sequencing technologies has facilitated a systems-level approach to biological and biomedical research. In particular, RNA sequencing (RNA-seq) has become a ubiquitous method for gene expression profiling. However, the colossal datasets produced by this method pose a new challenge for life science researchers, who commonly have little statistical or computational training. The processing of sequencing data commonly requires the development of custom workflows that can run in parallel on university computing clusters. Furthermore, the quality control and statistical analysis of these data requires specialist knowledge and purpose-built software packages.
+High-Performance Computing (HPC)",0.85,0.95,0.3,0.25,0.7,0.4,0.6,0.45,0.55,0.5,1,0.05,0.05,0.05
+13,13,RNA-seq Analysis,"The RNA-seq analysis exemplar involves the development of a pipeline for processing large volumes of biological data. The development of next generation sequencing technologies has facilitated a systems-level approach to biological and biomedical research. In particular, RNA sequencing (RNA-seq) has become a ubiquitous method for gene expression profiling. However, the colossal datasets produced by this method pose a new challenge for life science researchers, who commonly have little statistical or computational training. The processing of sequencing data commonly requires the development of custom workflows that can run in parallel on university computing clusters. Furthermore, the quality control and statistical analysis of these data requires specialist knowledge and purpose-built software packages.
 
 This project demonstrates the development of a pipeline for processing RNA-seq datasets on the computing clusters, such as the Imperial College Research Computing Service (RCS), and basic statistical analysis of the normalised data. This will involve:
 
@@ -1015,8 +1015,8 @@ Nextflow
 Conda
 Docker
 Git/GitHub
-continuous integration",0.75,0.9,0.85,0.5,0.8,0.4,0.65,0.55,0.6,0.85
-14,Bayesian Inference for SARS-CoV-2 Transmission Modelling,"The aim of this exemplar is to demonstrate how to design and fit a mathematical model of disease transmission to real data, in order to estimate key epidemiological parameters and inform public health responses. Specifically, we will model the emergence of the SARS-CoV-2 variant of concern Omicron in Gauteng, South Africa. To fit the model, we use Stan, a free, accessible and efficient Bayesian inference software. Adopting a Bayesian approach to model fitting allows us to account for uncertainty, which is especially important when modelling a new pathogen or variant. The transmission model uses compartments to track the populations movement between states, for instance from susceptible to infectious. By fitting a compartmental model to epidemiological surveillance data, we will recreate the transmission dynamics of Omicron and other circulating variants, and estimate key epidemiological parameters. Together these estimates are useful for guiding policy, especially in the early stages of an emerging variant or pathogen, when there are lots of unknowns.
+continuous integration",0.75,0.9,0.85,0.5,0.8,0.4,0.65,0.55,0.6,0.85,0.05,1,0.05,0.05
+14,14,Bayesian Inference for SARS-CoV-2 Transmission Modelling,"The aim of this exemplar is to demonstrate how to design and fit a mathematical model of disease transmission to real data, in order to estimate key epidemiological parameters and inform public health responses. Specifically, we will model the emergence of the SARS-CoV-2 variant of concern Omicron in Gauteng, South Africa. To fit the model, we use Stan, a free, accessible and efficient Bayesian inference software. Adopting a Bayesian approach to model fitting allows us to account for uncertainty, which is especially important when modelling a new pathogen or variant. The transmission model uses compartments to track the populations movement between states, for instance from susceptible to infectious. By fitting a compartmental model to epidemiological surveillance data, we will recreate the transmission dynamics of Omicron and other circulating variants, and estimate key epidemiological parameters. Together these estimates are useful for guiding policy, especially in the early stages of an emerging variant or pathogen, when there are lots of unknowns.
 
 Learning outcomes
 Upon completion of this tutorial, students will be able to:
@@ -1074,8 +1074,8 @@ Stan model
 Stan model diagnostics
 R code
 functionality
-tests in R",0.3,0.7,0.8,0.9,1,0.4,0.8,0.5,0.4,0.8
-15,1-Dimensional Neutron Diffusion Solver,"This code is part of the Research Computing and Data Science Examples (ReCoDE) project. The code itself is a 1-dimensional neutron diffusion solver written in Fortran in an object-oriented format. The example will focus on features of the code that can be used as a teaching aid to give readers some experience with the concepts such that they can implement them in the exercises or directly in their own codes. An understanding of neutron diffusion and reactor physics is not required for this example, but a discussion of the theory can be found in the bottom section of this readme.
+tests in R",0.3,0.7,0.8,0.9,1,0.4,0.8,0.5,0.4,0.8,0.05,1,0.05,0.05
+15,15,1-Dimensional Neutron Diffusion Solver,"This code is part of the Research Computing and Data Science Examples (ReCoDE) project. The code itself is a 1-dimensional neutron diffusion solver written in Fortran in an object-oriented format. The example will focus on features of the code that can be used as a teaching aid to give readers some experience with the concepts such that they can implement them in the exercises or directly in their own codes. An understanding of neutron diffusion and reactor physics is not required for this example, but a discussion of the theory can be found in the bottom section of this readme.
 
 Learning Outcomes
 Compiled Codes and Makefiles
@@ -1132,8 +1132,8 @@ build tools
 CMake
 fpm
 external libraries
-PETSc",0.85,0.9,0.3,0.25,0.8,0.4,0.75,0.5,0.6,0.55
-16,Markov Chain Monte Carlo for fun and profit,"This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London.
+PETSc",0.85,0.9,0.3,0.25,0.8,0.4,0.75,0.5,0.6,0.55,0.05,0.05,1,0.05
+16,16,Markov Chain Monte Carlo for fun and profit,"This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London.
 
 You do not need to know or care about Markov Chain Monte Carlo for this to be useful to you.
 
@@ -1229,8 +1229,8 @@ reproducible Python environment
 documenting code
 sphinx
 docstrings
-standardised format",0.85,0.95,0.4,0.3,0.8,0.45,0.7,0.5,0.55,0.6
-17,PyTorch for end-to-end training of a deep learning model,"Recode Perceptions is a PyTorch implementation of a deep convolutional neural network model trained on Places365 data.
+standardised format",0.85,0.95,0.4,0.3,0.8,0.45,0.7,0.5,0.55,0.6,1,0.05,0.05,0.05
+17,17,PyTorch for end-to-end training of a deep learning model,"Recode Perceptions is a PyTorch implementation of a deep convolutional neural network model trained on Places365 data.
 
 This model is trained on a subset of 100K images which have outcome labels that are associated to factors which are relevant for environmental health.
 
@@ -1268,4 +1268,4 @@ CNN (Convolutional Neural Network)
 pre-trained model
 train a model
 design choices
-model training",0.85,0.95,0.6,0.5,0.7,0.4,0.65,0.55,0.6,0.75
+model training",0.85,0.95,0.6,0.5,0.7,0.4,0.65,0.55,0.6,0.75,1,0.05,0.05,0.05
