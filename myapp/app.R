@@ -30,68 +30,62 @@ ui <- fluidPage(
 
 # Define server logic
 server <- function(input, output) {
-    output$radarPlot <- renderPlotly({
-      selected_project <- similarity_matrix %>%
-        filter(title == input$project) %>%
-        select(-title)
+  selected_project_data <- reactive({
+    similarity_matrix %>%
+      filter(title == input$project) %>%
+      select(-title)
+  })
+  
+  selected_lang_data <- reactive({
+    prog_lang %>%
+      filter(title == input$project) %>%
+      select(-title)
+  })
+  
+  output$radarPlot <- renderPlotly({
+    radar_data <- as.data.frame(selected_project_data())
+    req(radar_data)
     
-    # Prepare data for radar chart
-    radar_data <- as.data.frame((selected_project))
-    #radar_data <- rbind(rep(1, ncol(radar_data)), rep(0, ncol(radar_data)), radar_data)
-    #colnames(radar_data) <- colnames(similarity_matrix)[-1]
-
-    # Plot radar chart using Plotly
-    fig <- plot_ly(
+    plot_ly(
       type = 'scatterpolar',
       r = as.numeric(radar_data[1, ]),
       theta = colnames(radar_data),
       fill = 'toself'
-    ) 
-    fig <- fig %>%
+    ) %>%
       layout(
         polar = list(
           radialaxis = list(
-            visible = T,
-            range = c(0,1)
+            visible = TRUE,
+            range = c(0, 1)
           )
         ),
-        showlegend = F
+        showlegend = FALSE
       )
-    
-    fig
   })
-    output$radarPlot_lang <- renderPlotly({
-      selected_lang <- prog_lang %>%
-        filter(title == input$project) %>%
-        select(-title)
-      
-      # Prepare data for radar chart
-      radar_lang <- as.data.frame((selected_lang))
-      #radar_data <- rbind(rep(1, ncol(radar_data)), rep(0, ncol(radar_data)), radar_data)
-      #colnames(radar_data) <- colnames(similarity_matrix)[-1]
-      
-      # Plot radar chart using Plotly
-      fig <- plot_ly(
-        type = 'scatterpolar',
-        r = as.numeric(radar_lang[1, ]),
-        theta = colnames(radar_lang),
-        fill = 'toself'
-      ) 
-      fig <- fig %>%
-        layout(
-          polar = list(
-            radialaxis = list(
-              visible = T,
-              range = c(0,1)
-            )
-          ),
-          showlegend = F
-        )
-      
-      fig
-    })
+  
+  output$radarPlot_lang <- renderPlotly({
+    radar_lang <- as.data.frame(selected_lang_data())
+    req(radar_lang)
     
+    plot_ly(
+      type = 'scatterpolar',
+      r = as.numeric(radar_lang[1, ]),
+      theta = colnames(radar_lang),
+      fill = 'toself'
+    ) %>%
+      layout(
+        polar = list(
+          radialaxis = list(
+            visible = TRUE,
+            range = c(0, 1)
+          )
+        ),
+        showlegend = FALSE
+      )
+  })
 }
+
+
 
 # Run the application 
 shinyApp(ui = ui, server = server)
