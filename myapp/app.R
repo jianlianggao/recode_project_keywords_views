@@ -29,7 +29,7 @@ ui <- fluidPage(
 )
 
 # Define server logic
-server <- function(input, output) {
+server <- function(input, output, session) {
   selected_project_data <- reactive({
     similarity_matrix %>%
       filter(title == input$project) %>%
@@ -83,6 +83,12 @@ server <- function(input, output) {
         showlegend = FALSE
       )
   })
+  
+  # Trigger initial rendering
+  observe({
+    updateSelectInput(session, "project", selected = similarity_matrix$title[1])
+  })
+  
 }
 
 
