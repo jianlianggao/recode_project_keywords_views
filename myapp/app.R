@@ -86,6 +86,7 @@ server <- function(input, output, session) {
   
   # Trigger initial rendering
   observe({
+    updateSelectInput(session, "project", selected = similarity_matrix$title[2])
     updateSelectInput(session, "project", selected = similarity_matrix$title[1])
   })
   
