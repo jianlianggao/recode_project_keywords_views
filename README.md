@@ -12,4 +12,4 @@ Using the keywords extracted by GenAI models (LlaMa3, copilot) to calculate the 
  
 
 ## Interactive page
-To view an interactive page of radar charts, please visit at [ReCoDE keywords Charts](https://jianlianggao.github.io/recode_project_keywords_views/)
+To view an interactive page of radar charts (cosine similarity was applied to calculate the matrix), please visit at [ReCoDE keywords Charts](https://jianlianggao.github.io/recode_project_keywords_views/)
