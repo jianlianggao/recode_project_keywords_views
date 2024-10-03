@@ -1,0 +1,1271 @@
+"","X","projects","title","description","requirements","keywords..LlaMA3.8B.","keywords.copilot.ms","Engineering","Computing","Clinical.Sciences","Public.Health","Mathematics","Business.and.Management","Physics","Chemistry","Materials","Bioengineering","Python","R","Fortran","C_Plus_Plus","Engineering.gensim","Computing.gensim","Clinical Sciences.gensim","Public Health.gensim","Mathematics.gensim","Business and Management.gensim","Physics.gensim","Chemistry.gensim","Materials.gensim","Bioengineering.gensim"
+"1",1,1,"Environmental Literature Analysis with BERTopic & RoBERTa","Explosive literature in Environmental and Sustainability Studies
+The field of environmental and sustainability studies has witnessed an explosive growth in literature over the past few decades, driven by the increasing global awareness and urgency surrounding environmental issues, climate change, and the need for sustainable practices.
+
+This rapidly expanding body of literature is characterized by its interdisciplinary nature, encompassing a wide range of disciplines such as ecology, climate science, energy, economics, policy, sociology, and more. With a global focus and contributions from countries around the world, the literature base reflects diverse cultural, socio-economic, and geographical contexts, often in multiple languages. Novel research areas and emerging topics, such as circular economy, sustainable urban planning, environmental justice, biodiversity conservation, renewable energy technologies, and ecosystem services, continue to arise as environmental challenges evolve and our understanding deepens. The development of environmental policies, regulations, and international agreements, as well as increased public interest and awareness, have further fueled research and the demand for literature aimed at informing and engaging various stakeholders. Technological advancements in areas like remote sensing, environmental monitoring, and computational modelling have enabled new avenues of research and data-driven studies, contributing to the proliferation of literature. The rise of open access publishing and digital platforms has facilitated the dissemination and accessibility of this constantly evolving and interdisciplinary body of knowledge.
+
+So, in summary, the explosive growth of the literature across multiple disciplines, geographic regions, languages, and emerging topics poses significant challenges in terms of effectively organizing, synthesizing, and extracting insights from this vast and rapidly expanding body of knowledge. This is where Natural Language Processing (NLP) techniques like topic modelling with BERTopic and advanced language models like RoBERTa can play a crucial role. Their ability to process large volumes of text data, identify semantic topics and patterns, cluster related documents, and handle multiple languages can help researchers, policymakers, and stakeholders navigate this extensive literature more effectively.
+
+Furthermore, as a STEMM PhD student at Imperial stepping into a new field such as Sustainability, taking advantage of the NLP tools can significantly enhance the efficiency of literature exploration and review. This skill facilitates a seamless transition into interdisciplinary research, empowering you to navigate diverse datasets and extract valuable insights with greater ease and precision.
+
+The Potential of Topic Modelling
+Topic modelling is a technique in NLP and machine learning used to discover abstract ""topics"" that occur in a collection of documents. The key idea is that documents are made up of mixtures of topics, and that each topic is a probability distribution over words.
+
+More specifically, topic modelling algorithms like Latent Dirichlet Allocation (LDA) work by:
+
+Taking a set of text documents as input.
+Learning the topics contained in those documents in an unsupervised way. Each topic is represented as a distribution over the words that describe that topic.
+Assigning each document a mixture of topics with different weights/proportions.
+For example, if you ran topic modelling on a set of news articles, it may discover topics like ""politics"", ""sports"", ""technology"", etc. The ""politics"" topic would be made up of words like ""government"", ""election"", ""policy"" with high probabilities. Each document would then be characterized as a mixture of different proportions of these topics.
+
+The key benefits of topic modelling include:
+
+Automatically discovering topics without need for labeled data
+Understanding the themes/concepts contained in large document collections
+Organizing, searching, and navigating over a document corpus by topics
+Providing low-dimensional representations of documents based on their topics
+Topic modelling has found applications in areas like information retrieval, exploratory data analysis, document clustering and classification, recommendation systems, and more. Popular implementations include Latent Dirichlet Allocation (LDA), Biterm Topic Model (BTM), and techniques leveraging neural embeddings like BERTopic.
+Learning Outcomes
+By the end of this tutorial, students will be able to acquire the following learning outcomes:
+
+Proficiency in Text Data Preprocessing: Participants will gain hands-on experience in preprocessing environmental literature datasets, including cleaning, tokenisation, and normalisation techniques, essential for preparing data for NLP analysis.
+
+Understanding the principle of embedding-matrix-based NLP techniques: Through the application of BERTopic for topic modelling and RoBERTa for sentiment analysis, students will develop a deep understanding of advanced NLP methods and their practical implementation in dissecting environmental and sustainability texts and beyond.
+
+Critical Analysis Skills: Participants will learn to critically analyse and interpret the results of NLP analyses, including identifying dominant themes, sentiment shifts, and trends in environmental literature, fostering a nuanced understanding of environmental discourse.
+
+Interpretation and Application: Relying on a real-world example, this project demonstrates how to generate visualisations and reports to present the results of the topic modelling and sentiment analysis, facilitating interpretation and discussion.","It would help a lot if you went through the following Graduate School courses before going through this exemplar: * Introduction to Python * Data Exploration and Visualisation * Data Processing with Python Pandas * Plotting in Python with Matplotlib * Binary Classification of Patent Text Using Natural Language Processing (another ReCoDE project)
+
+Academic
+Access to Google Colaboratory
+Basic Math (matrices, averages)
+Programming skills (python, pandas, numpy, tensorflow)
+Machine learning theory (at level of intro to machine learning course).         
+
+
+System: Windows, MacOS, Ubuntu Python 3.11 or higher Ideally with GPU for fast running of the code
+
+NB: If you have access to High Performance Computing (HPC), we have prepared a specially adapted file for Imperial HPC environments, located under the ""notebook"" directory. This file is optimized to leverage the computational power and resources available through HPC, enabling more efficient processing and faster execution of your tasks.","Environmental and Sustainability Studies
+Literature
+Interdisciplinary
+Climate Change
+Sustainability
+Policy
+Ecology
+Energy
+Economics
+Sociology
+Circular Economy
+Sustainable Urban Planning
+Environmental Justice
+Biodiversity Conservation
+Renewable Energy Technologies
+Ecosystem Services
+Natural Language Processing (NLP)
+Topic Modelling
+BERTopic
+RoBERTa
+Text Data Preprocessing
+Embedding-matrix-based NLP techniques
+Sentiment Analysis
+Critical Analysis Skills
+Interpretation and Application
+STEMM
+PhD","Explosive growth
+Environmental and sustainability studies
+Interdisciplinary nature
+Ecology
+Climate science
+Energy
+Economics
+Policy
+Sociology
+Global focus
+Cultural contexts
+Socio-economic contexts
+Geographical contexts
+Circular economy
+Sustainable urban planning
+Environmental justice
+Biodiversity conservation
+Renewable energy technologies
+Ecosystem services
+Environmental policies
+International agreements
+Public interest
+Technological advancements
+Remote sensing
+Environmental monitoring
+Computational modelling
+Open access publishing
+Digital platforms
+Natural Language Processing (NLP)
+Topic modelling
+BERTopic
+RoBERTa
+STEMM PhD student
+Literature exploration
+Interdisciplinary research
+Topic modelling algorithms
+Latent Dirichlet Allocation (LDA)
+Biterm Topic Model (BTM)
+Embedding-matrix-based NLP techniques
+Sentiment analysis
+Text data preprocessing
+Tokenisation
+Normalisation techniques
+Critical analysis skills
+Visualisations
+Reports",0.6,0.7,0.5,0.8,0.7,0.6,0.6,0.5,0.5,0.7,1,0.05,0.05,0.05,0.250346124172211,0.348295331001282,0.430852238088846,0.12589131295681,1,0.599677324295044,0.778904676437378,0.344888538122177,0.275983303785324,0.469005763530731
+"2",2,2,"Cracking Time's Code: Survival Analysis of Large Datasets","This is a special type of analysis that takes into consideration when the event occurred rather than if the event occurred. In other words, we are focused on acquiring the rate, which is the number of events per unit time. In this exemplar will introduce you to the concept of survival analysis (also known as a time-to-event analysis) using large data sets using R.
+
+Firstly, I will highlight the steps needed to effectively clean the data, including correct censoring of the participants.
+
+Secondly, I will demonstrate two approaches: a univariate and a multivariate Cox Proportional regression model (which allows the incorporation of confounders).
+
+Thirdly, we will be able to estimate the hazard ratio of an event occurring between two groups and present our findings in a Kaplan-Meier curve (univariate analysis) or in a table/forest plot (multivariate analysis).
+
+This special type of analysis allows to calculate the risk of the event (disease, death, etc.) occurring at a given time (hazard ratio). A common timescale used in survival analysis is time-to-event, however in large cohort studies data may be left-truncated (participants entering the study at different time points), making the time-scale unsuitable. Instead, age should be considered as the timescale. This is most relevant when exploring age-dependent associations between exposures and outcomes. Therefore, it ensures accurate estimation of hazard risk and median survival times, preventing underestimation.
+
+Learning Outcomes
+Understand the different types of censoring and how to curate your data
+Conduct univariate and multivariate survival analysis using R
+Graphically present the findings of a survival analysis
+Interpret the results from a survival analysis","","Survival analysis
+Time-to-event analysis
+Cox Proportional regression model
+Hazard ratio
+Kaplan-Meier curve
+Forest plot
+Censoring
+Data cleaning
+Univariate analysis
+Multivariate analysis
+Age-dependent associations
+Hazard risk
+Median survival times","Special type of analysis
+Event occurrence
+Rate
+Number of events per unit time
+Survival analysis
+Time-to-event analysis
+Large data sets
+R
+Data cleaning
+Censoring
+Univariate Cox Proportional regression model
+Multivariate Cox Proportional regression model
+Confounders
+Hazard ratio
+Kaplan-Meier curve
+Table/forest plot
+Risk calculation
+Disease
+Death
+Common timescale
+Time-to-event
+Large cohort studies
+Left-truncated data
+Age as timescale
+Age-dependent associations
+Exposures and outcomes
+Hazard risk estimation
+Median survival times
+Underestimation
+Learning outcomes
+Types of censoring
+Data curation
+Graphical presentation
+Result interpretation",0.5,0.7,0.8,0.9,0.8,0.6,0.6,0.5,0.4,0.7,0.05,1,0.05,0.05,0.174065068364143,0.912667512893677,0.5,0.122830647975206,0.664527654647827,0.460888594388962,0.401372104883194,0.251016885042191,0.47477200627327,0.0909457951784134
+"3",3,3,"Hand-eye Calibration of Medical Robots","Hand-eye calibration is a well-studied topic in the field of robotics. Applications that involve the use cameras typically require conducting hand-eye calibration beforehand. This project presents a pipeline for conducting hand-eye calibration using a bespoke marker for a medical robot (the first generation da Vinci research kit).The method presented in this project aims to conduct registration between two sets of point cloud using singular value decomposition (SVD). This project aims to instruct students to understand basic knowledge of hand-eye calibration and grasp essential skills in using computer vision libraries such as OpenCV and Point Cloud library in C++. Hand-eye calibration results can be visualised through 2D back projections. 
+
+Learning Outcomes
+Understand what hand-eye calibration is and prevalent school of thoughts in solving this problem.
+Develop basic skills in writing an object-oriented project in C++.
+Develop basic skills in using computer vision libraries, such as OpenCV and Point Cloud Library.","Academic
+Basic knowledge on robotics (eg. Denavit‚ÄìHartenberg (DH) parameters, forward kinematics)
+Hand-eye calibration and fundamental knowledge on computer vision (eg. camera intrinsic matrix, extrinsic matrix, projection geometry)
+Linear algebra (eg. Singular Value Decomposition (SVD)). Detailed information can be referred to docs/Background.md
+System
+A C++ toolchain along with the necessary development libraries:
+Eigen library (Eigen 3)
+OpenCV library (OpenCV 4.6)
+Point cloud library (PCL 1.11)","Hand-eye calibration
+Robotics
+Cameras
+Medical robot
+Da Vinci research kit
+Singular value decomposition (SVD)
+Point cloud
+Computer vision
+OpenCV
+Point Cloud Library (PCL)
+C++
+Object-oriented programming
+2D back projections","Hand-eye calibration
+Robotics
+Cameras
+Bespoke marker
+Medical robot
+da Vinci research kit
+Point cloud
+Singular value decomposition (SVD)
+Registration
+Computer vision libraries
+OpenCV
+Point Cloud Library
+C++
+2D back projections
+Learning outcomes
+Basic knowledge
+Prevalent schools of thought
+Object-oriented project
+Essential skills",0.8,0.9,0.6,0.5,0.7,0.4,0.7,0.5,0.6,0.8,0.05,0.05,0.05,1,0.532966017723083,0.943313479423523,0.533991143107414,0.560269825160503,0.0909029543399811,0.191366169601679,0.507847011089325,0.233583047986031,0,0.303152233362198
+"4",4,4,"Turing Patterns & Partial Differential Equations","This code is a component of the Research Computing and Data Science Examples (ReCoDE) project. It comprises a non-linear partial differential equation (PDE) solver implemented in Fortran, designed to address both boundary value problems (BVP) and initial boundary value problems (IBVP) with temporal progression. The solver's versatility allows it to handle problems in one or two dimensions and can accommodate single equations or pairs of coupled equations. This exemplar showcases several key features of the code, including:
+
+Integration with the Fortran Package Manager (FPM)
+Utilization of LAPACK libraries
+Modular architecture for enhanced maintainability and extensibility
+To demonstrate its practical application, the code solves a PDE derived from a predator-prey model. This model is renowned for generating solutions that exhibit Turing patterns, which are observed in various biological systems, such as the skin patterns of pufferfish. While prior knowledge of PDEs and predator-prey models is not prerequisite for understanding this example, all relevant mathematical concepts will be elucidated in the subsequent sections. 
+
+Learning Outcomes
+Complied Codes
+Fortran Package Manager (FPM)
+Modular Codes
+Multipurpose Codes
+Solving Mathematical Problems (PDEs)
+Generalising Problems
+Discretisation in multiple dimensions
+Use of external libraries (LAPACK and BLAS)
+Testing Fortran code","Academic
+Ordinary Differential Equations (ODEs): Ordinary differential equations are equations that involve functions of a single independent variable and their derivatives. These equations are fundamental in modeling various physical, biological, and economic phenomena where the rate of change of a quantity is related to the quantity itself. A discussion on ordinary differential equations can be found here
+Partial Differential Equations (PDEs): Partial differential equations are more complex than ODEs, as they involve functions of multiple independent variables and their partial derivatives. PDEs are crucial in describing many natural phenomena, including heat transfer, fluid dynamics, and quantum mechanics. They allow us to model systems that change with respect to multiple variables simultaneously, such as time and space. A discussion on partial differential equations can be found here.
+Numerical Techniques: While some differential equations can be solved analytically, many real-world problems require numerical methods for approximation. The numerical techniques used for solving PDEs are often similar to those used for ODEs, but they must account for the additional complexity introduced by multiple variables.
+Finite Difference Method: One common numerical approach for solving PDEs is the finite difference method. This technique approximates derivatives by differences over small intervals. It discretises the continuous domain of the PDE into a grid or mesh, and the solution is computed at discrete points. This method is particularly useful for problems with regular geometries and is relatively straightforward to implement.
+Understanding these concepts is crucial for working with the non-linear PDE solver included in this exemplar. The solver's ability to handle both BVPs and IVBPs makes it a versatile tool for a wide range of applications in scientific computing and mathematical modeling.
+
+System
+A Fortran compiler, such as gfortran: see here for an installation guide.
+Fortran Package Manager (FPM): see here for an installation guide.
+BLAS external library: see here for a BLAS installation guide here. Mac users can install with homebrew.
+LAPACK external library: see the LAPACK documentation here and here for an installation guide. Mac users can install with homebrew. BLAS must be installed first.
+Optional: For visualisation of solutions we have made use of MATLAB_R2023a code. These are given in the solver/examples directory. Other visualisation software can be used.","Research Computing
+Data Science
+Fortran
+Partial Differential Equation (PDE)
+Solver
+Boundary Value Problems (BVP)
+Initial Boundary Value Problems (IBVP)
+Temporal Progression
+LAPACK
+Modular Architecture
+Maintainability
+Extensibility
+Predator-Prey Model
+Turing Patterns
+Biological Systems
+PDEs
+Fortran Package Manager (FPM)
+Complied Codes
+Modular Codes
+Multipurpose Codes
+Solving Mathematical Problems
+Discretisation
+External Libraries
+BLAS
+Testing Fortran Code","Research Computing and Data Science Examples (ReCoDE)
+Non-linear partial differential equation (PDE) solver
+Fortran
+Boundary value problems (BVP)
+Initial boundary value problems (IBVP)
+Temporal progression
+One or two dimensions
+Single equations
+Coupled equations
+Fortran Package Manager (FPM)
+LAPACK libraries
+Modular architecture
+Maintainability
+Extensibility
+Predator-prey model
+Turing patterns
+Biological systems
+Skin patterns of pufferfish
+Mathematical concepts
+Learning outcomes
+Compiled codes
+Multipurpose codes
+Solving mathematical problems
+Generalising problems
+Discretisation
+External libraries (LAPACK and BLAS)
+Testing Fortran code",0.8,0.9,0.6,0.5,0.8,0.4,0.7,0.5,0.6,0.8,0.05,0.05,1,0.05,0.396018952131271,1,0.378314532339573,0.055101040750742,0.448758572340012,0.202381260693073,0.488356292247772,0.430869609117508,0.201812237501144,0.310551941394806
+"5",5,5,"Deep Learning Best Practices","This project aims to showcase best practices and tools essential for initiating a successful deep learning project. It will cover the use of configuration files for project settings management, adopting a modular code architecture, and utilizing frameworks like Hydra for efficient configuration. The project will also focus on effective result logging and employing templates for project structuring, aiding in maintainability, scalability, and collaborative ease.
+
+Learning outcomes
+Using Wandb to Log Training Metrics and Images
+Master the integration of Wandb (Weights & Biases) into your project for comprehensive logging of training metrics and images. This includes setting up Wandb, configuring it for your project, and utilizing its powerful dashboard for real-time monitoring and analysis of model performance.
+
+Using Hydra to Manage Configurations
+
+Learn to leverage Hydra for advanced configuration management in your projects. Understand how to define, organize, and override configurations dynamically, enabling flexible experimentation and streamlined management of complex projects.
+
+Using PyTorch Lightning to Train Models
+
+Gain expertise in using PyTorch Lightning to simplify the training of machine learning models. This includes setting up models, training loops, validation, testing, and leveraging PyTorch Lightning's abstractions for cleaner, more maintainable code.
+
+Einops for Easy Tensor Manipulation
+
+Acquire the skills to use Einops for intuitive and efficient tensor operations, enhancing the readability and scalability of your data manipulation code. Learn to apply Einops for reshaping, repeating, and rearranging tensors in a more understandable way.
+
+Learning to Start Training on GPU
+
+Understand how to utilize GPUs for training your models. This outcome covers the basics of GPU acceleration, including how to select and allocate GPU resources for your training jobs to improve computational efficiency.
+
+Using a Template to Start Project
+
+Familiarize yourself with starting new projects using a predefined template, specifically the Minimal Lightning Hydra Template. Learn the benefits of using templates for project initialization, including predefined directory structures, configuration files, and sample code to kickstart your development process.","Pytorch Lightning: This notebook introduces Pytorch Lightning, a library that simplifies the training process of PyTorch models. It covers basic concepts like creating models, training loops, and leveraging Lightning's built-in functionalities for more efficient training.
+Hydra: Hydra is a framework for elegantly configuring complex applications. This notebook will guide you through its configuration management capabilities, demonstrating how to streamline your project's settings and parameters.
+Einops: Einops is a library for tensor operations and manipulation. Learn how to use Einops for more readable and maintainable tensor transformations in this notebook.
+For a more comprehensive understanding, I also recommend the following tutorials. They provide in-depth knowledge and are great resources for both beginners and experienced users:
+
+Pytorch Lightning Tutorial: An official guide to starting a new project with Pytorch Lightning, offering step-by-step instructions and best practices.
+Hydra Documentation: The official introduction to Hydra, covering its core principles and how to integrate it into your applications.
+Wandb Quickstart: A quickstart guide for Wandb, a tool for experiment tracking, visualization, and comparison. Learn how to integrate Wandb into your machine learning projects.
+Einops Basics: An introductory tutorial to Einops, focusing on the basics and fundamental concepts of the library.","Deep learning
+Configuration files
+Modular code architecture
+Hydra
+Wandb (Weights & Biases)
+PyTorch Lightning
+Einops
+GPU acceleration
+Template-based project initialization
+Project settings management
+Result logging
+Project structuring
+Maintainability
+Scalability
+Collaborative ease
+Training metrics
+Image logging
+Model performance monitoring
+Configuration management
+Tensor manipulation","Best practices
+Tools
+Deep learning project
+Configuration files
+Project settings management
+Modular code architecture
+Hydra
+Efficient configuration
+Result logging
+Templates
+Project structuring
+Maintainability
+Scalability
+Collaborative ease
+Wandb
+Log training metrics
+Images
+Integration
+Real-time monitoring
+Analysis
+Model performance
+Advanced configuration management
+Define configurations
+Organize configurations
+Override configurations
+Flexible experimentation
+Streamlined management
+PyTorch Lightning
+Train models
+Training loops
+Validation
+Testing
+Abstractions
+Maintainable code
+Einops
+Tensor manipulation
+Reshaping
+Repeating
+Rearranging tensors
+GPU training
+GPU acceleration
+Allocate GPU resources
+Computational efficiency
+Minimal Lightning Hydra Template
+Project initialization
+Directory structures
+Sample code",0.8,0.9,0.6,0.5,0.8,0.4,0.7,0.5,0.6,0.8,1,0.05,0.05,0.05,0.622701406478882,0.466259330511093,0.249381169676781,0.0685009702574462,0.218272835016251,0.580215536057949,0.26119926571846,0.10003936290741,0.519474148750305,0.166273504495621
+"6",6,6,"SPH-SOLVER-2D-NS","In this project we present a numerical code in C++ which solves the two-dimensional Navier-Stokes equations using the smoothed-particle hydrodynamics (SPH) approach. The focus lies in the implementation (and documentation) of good C++ practices and the development of skills related to efficient, robust, extensible and readable scientific code. The learning process regarding this project can be twofold:
+
+1) The student can study the material provided in the main branch of the present repository. It is independent of all the other branches and can be used as a standalone educational resource. In this the implemented SPH methodology is explained as well as the structure of the source code and the post-processing scripts.
+
+2) The student can start by studying progressively the branches v0 - v5 in order to experience the process which was followed in order to improve and optimize the herein code. Several comments have been added for each individual version in the corresponding branch to highlight the improvements which were implemented compared to its ancestors.
+
+Learning Outcomes
+I/O (input/output)
+OOP (object-oriented programming)
+C++ containers
+Performance and memory optimization tools and skills","Academic
+Experience with basic programming concepts (for loops, functions, reading and writing files etc.).
+
+Some experience with C++ (familiarity with pointers, C++ classes and the use of external libraries).
+
+Basic understanding of numerical analysis concepts (time marching, temporal integration etc.)
+
+System
+For manual installation of the program and its dependencies, you will need the following:
+
+Python 3.11 installed
+A C++ toolchain along with the necessary development libraries:
+build-essential
+libboost-program-options-dev,
+clang-format
+cmake.","Navier-Stokes equations
+Smoothed-particle hydrodynamics (SPH)
+C++
+Object-oriented programming (OOP)
+C++ containers
+Performance optimization
+Memory optimization
+Scientific code
+Good programming practices
+Documentation
+Input/output (I/O)
+Object-oriented programming (OOP)","Numerical code
+C++
+Two-dimensional Navier-Stokes equations
+Smoothed-particle hydrodynamics (SPH)
+Implementation
+Documentation
+Good C++ practices
+Efficient
+Robust
+Extensible
+Readable scientific code
+Learning process
+Main branch
+Standalone educational resource
+SPH methodology
+Source code structure
+Post-processing scripts
+Branches v0 - v5
+Improvements
+Learning outcomes
+I/O (input/output)
+OOP (object-oriented programming)
+C++ containers
+Performance optimization
+Memory optimization",0.9,0.8,0.4,0.3,0.8,0.4,0.7,0.5,0.6,0.7,1,0.05,0.05,1,0.676785707473755,0.811648964881897,0.895861059427261,0.10491419583559,0.754538893699646,0.515342518687248,0.98399829864502,0.726114869117737,0.464910447597504,0.611615598201752
+"7",7,7,"Hidden Markov Models for the discovery of behavioural states","This is an exemplar project to help you understand the concepts behind the Hidden Markov Model (HMM), how to implement one with the python package hmmlearn, and finally how to explore the decoded data.
+
+HMMs are widely used in multiple fields, including biology, natural language processing, and finance as a predictor of future states in a sequence. However, here we will be utilising the hidden model states to create a hypothesied internal behavioural architecture.
+
+The tutorial will also run briefly through how to clean and augment a real world dataset using numpy and pandas, so that it's ready for training with hmmlearn.
+
+The information in tutorial was primarily designed around the user completing reading along and completing a jupyter notebook in python. But can followed loosely from just these pages. If reading along ignore any sections asking to complete any code (or complete it in your mind).
+
+This is all a part of the ReCoDE Project at Imperial College London
+
+Learning Outcomes
+Only a basic understanding of python is needed prior to beginning, with the tutorials walking you through the use of numpy and pandas to curate data for use with the hmmlearn package.
+
+Understanding the core concepts of HMMs
+Curating data and training/validating your own HMM
+Visualising and understanding your decoded data","Academic
+A basic knowledge of python is needed.
+
+The tutorial will be based in numpy and pandas, two data science packages for working with and manipulating data.
+
+No prior knowledge of HMMs is needed, nor deep understanding of mathmatical modelling. However, if you do want to read more about HMMs, I found this resource very useful when starting out: Hidden Markov Models - Speech and Language Processing
+
+System
+Program	Version
+Python	>= 3.11.0
+Git	>= 2.43.0
+Packages
+Package	Version
+numpy	>= 1.26.4
+pandas	>= 2.2.0
+hmmlearn	>= 0.3.0
+Matplotlib	>= 3.8.3
+seaborn	>= 0.13.2
+tabulate	>= 0.9.0
+jupyter	>= 1.0.0","Hidden Markov Model (HMM)
+hmmlearn
+Python
+Numpy
+Pandas
+Data cleaning
+Data augmentation
+Machine learning
+Sequence prediction
+ReCoDE Project
+Imperial College London
+Learning outcomes","Exemplar project
+Hidden Markov Model (HMM)
+Python package hmmlearn
+Decoded data
+Multiple fields
+Biology
+Natural language processing
+Finance
+Predictor of future states
+Hidden model states
+Internal behavioural architecture
+Clean and augment dataset
+Numpy
+Pandas
+Training with hmmlearn
+Jupyter notebook
+ReCoDE Project
+Imperial College London
+Learning outcomes
+Basic understanding of Python
+Core concepts of HMMs
+Curating data
+Training/validating HMM
+Visualising decoded data ",0.7,0.9,0.5,0.4,0.8,0.5,0.6,0.4,0.5,0.7,1,0.05,0.05,0.05,0.278225719928741,1,0.41878861002624,0.352427005767822,0.976023852825165,0.585348963737488,0.484263628721237,0.401693284511566,0.530863463878632,0.28327414393425
+"8",8,8,"Decoding Market Signals","This project aims to rigorously back-test a trading strategy, focusing on evaluating the informational value of candlestick patterns. Utilising Python, a pipeline of functions will systematically scan and evaluate the components of the S&P 500 stock market index for patterns upon which one can base a trading decision.
+
+Advanced functionalities of the Pandas library will be employed to load, manipulate and store detailed statistical data, particularly method chains, multi-indexed data frames and user-defined functions acting on rows and columns of data frames.
+
+The project's core involves assessing the predictive capabilities of these trading signals using nuanced binary classification performance metrics, thereby determining their practical applicability. Additionally, a logistic regression model will be deployed to explore the intersection of finance and machine learning. This phase aims to ascertain whether machine learning algorithms can outperform traditional methods in predicting market movements based on identified signals.
+
+This multifaceted project integrates financial analysis, data science, and machine learning, promising insights with both academic and practical implications. Its methodologically sound approach, coupled with detailed documentation and learning annotations, is designed to make it an exemplary contribution to the ReCoDE initiative, showcasing the transformative potential of research computing and data science in interdisciplinary research.
+
+Learning Outcomes
+Setting up a custom computational environment for financial data science.
+Making a custom technical analysis library written in C++ work with recent Python.
+Obtaining and pre-processing high-quality financial data.
+Using Pandas' best-practices like method-chaining, and multi-index data frames for data manipulation
+Independently testing and analysing trading actions proposed on a hypothesis.","Foundational knowledge of Python and Pandas.
+An interest in stock markets and trading signals.
+An interest in statistical analysis and hypothesis testing.
+Resilience in troubleshooting and adapting older libraries to work with recent Python versions.
+Particularly, we will make use of a library called ta-lib that contains a pattern-recognition library detecting candlestick patterns in Open-High-Low-Close (OHCL) data.
+Familiarity with Jupyter notebooks, type annotations, and automation.
+Academic
+The repository is self-contained. Additional references are provided in the Jupyter notebooks. When we move form a single-stock analysis to the whole investment-universe, the resulting data frames become too large to work with on a standard machine leading to Kernel crashes. They are themselves not dangerous to the hardware of the computer at all, and one can mitigate this by selecting a subset of the data. If you wish to run the code on all the data, you need a potent machine, or alternatively execute the code on the HPC facilities. That does not hinder you from getting started, though.
+
+System
+A recent mid-class laptop is sufficient to follow along the code. The more data you wish to analyse, the more RAM it should have. The code was developed on a Linux machine.
+
+In this code exemplary, we make use of Python 3.11. Identifying the candlestick patterns in financial markets data is obtained by using a library that is called ta-lib. It works well for our task, but its Python wrapper is no longer maintained. If you are comfortable with an older version of Python, precisely Python 3.8 or Python 3.9, or just want to get started, it is straightforward to install an older version using pip or conda.
+
+ta-lib was tested to be installable from pypi on Python 3.8 and 3.9. If you just want to get started, use Python 3.8. ta-lib can then be installed using pip install TA-Lib. Alternatively, if you want to make use of the conda package manager, use conda install ta-lib For Python 3.9, the author observed on a Linux operating system, that conda install ta-lib worked straightforward, whereas pip install ta-lib did not.","Trading strategy
+Candlestick patterns
+Python
+S&P 500
+Pandas library
+Statistical data
+Logistic regression
+Machine learning
+Binary classification
+Financial analysis
+Data science
+Research computing
+Interdisciplinary research
+Computational environment
+Technical analysis
+C++
+Data manipulation
+Method-chaining
+Multi-index data frames","Back-test trading strategy
+Candlestick patterns
+Python
+S&P 500 stock market index
+Pandas library
+Method chains
+Multi-indexed data frames
+User-defined functions
+Predictive capabilities
+Binary classification performance metrics
+Logistic regression model
+Finance and machine learning
+Financial analysis
+Data science
+Machine learning
+Academic and practical implications
+ReCoDE initiative
+Research computing
+Data science
+Custom computational environment
+Technical analysis library
+C++
+High-quality financial data
+Data manipulation
+Testing and analysing trading actions ",0.7,0.9,0.4,0.3,0.8,0.6,0.7,0.5,0.6,0.7,1,0.05,0.05,0.05,0.914219439029694,1,0.513687238097191,0.0844841301441193,0.596266269683838,0.483139485120773,0.769420623779297,0.474099785089493,0.458135932683945,0.718381822109222
+"9",9,9,"Binary Classification of Patent Texts","There were 193,460 European patent applications filed at the European Patent Office in 2022.
+
+The EPO, and several other agencies are really interested in trends associated with the filings of patents to specific areas such as ‚ÄòGreen Plastics‚Äô (e.g., plastics that can be recycled, or that are made from biodegradable materials).
+
+Typically, to identify whether a patent is related to a certain topic or not, a person would have to manually read through a patent application and assign classification labels to it based on their opinions. Patent applications can be hunderds of pages long, and with the sheer amount of applications that the EPO receive annually, it's easy to see why patent classification is a tedious task!
+
+Hence, there is a need for quick and robust methods of accurately classifying the plethora of patents being submitted to the EPO to highlight any trends in ‚ÄòGreen Plastics‚Äô filings, or filings in any other areas of interest (e.g., renewable energies, artificial intelligence, augmented reality, drug discovery)
+
+By employing machine learning, in the form of Natural Language Processing algorithms, the cost, and likelihood of misclassification of patents, in any technical area, can be significantly reduced, while speeding up the process.
+
+To address the challenge of classifying patents, the EPO held its first ever Codefest, where it challenged entrants to develop creative and reliable artificial intelligence (AI) models for automating the identification of patents related to green plastics.
+
+To enable contestants to develop their models, the EPO provided access to its extensive dataset of patents and patent classifications. From this, we created a smaller, binary classification dataset, with half of the entries being related to 'Green Plastics' patents, and the other half being related to other patent areas.
+
+Learning Outcomes
+What you'll learn from each Notebook:
+Introduction (Start with this)
+Why we need to classify patents.
+What is Tensorflow?
+Loading datasets into your workspace.
+What Tokenisation, Vectorisation and Word Embeddings are in the context of NLP.
+Methods to analyse and understand a dataset.
+Training a model using the Term-Frequency - Inverse Document Frequency (TF-IDF) vectorisation technique with a Multinomial Bayes algorithm.
+Multi-Layer Perceptron (Complete this after the Introduction Notebook)
+What a MultiLayer Perceptron is, and how they can be used for text classification.
+How to train a Multilayer Perceptron using Tensorflow's Keras.
+Making predictions using a Multilayer Perceptron.
+What are hyperparameters and how do they affect the training and performance of machine learning models.
+Optimise a model's training pipeline using Callbacks
+Visualise a model and plotting training loss curves.
+Visualising the structure of a compiled model.
+Evaluating the performance of a MultiLayer Perceptron.
+Long Short Term Memory Networks (LSTMs) (Complete after Intro and Multi-Layer Perceptron Notebooks)
+What a LSTM is, and how they can be used for text classification.
+How to train a LSTM using Tensorflow's Keras.
+Evaluating the performance of the LSTM.
+One-Dimensional Convolutional Neural Networks (1D-CNN) (Complete after Intro and Multi-Layer Perceptron Notebooks)
+What a 1D-CNN is, and how they can be used for text classification.
+How to train a 1D-CNN using Tensorflow's Keras.
+What a pooling layer is?
+Evaluating the performance of the 1D-CNN.
+Transformers (Complete after Intro, Multi-Layer Perceptron and LSTM Notebooks)
+What a Transformer is, and how they can be used for text classification.
+How to train a Transformer using Tensorflow's Keras and Object Oriented Programming.
+What is attention?
+What is a softmax layer?
+Evaluating the performance of the Transformer.","Data Exploration and Visualisation
+
+Data Processing with Python Pandas
+
+Plotting in Python with Matplotlib
+
+Introduction to Machine Learning
+
+Mathematics for Machine Learning Specialisation (Coursera)
+
+Academic
+Access to Google Colaboratory
+Basic Math (matrices, averages)
+Programming skills (python, pandas, numpy, tensorflow)
+Machine learning theory (at level of intro to machine learning course)","European Patent Office (EPO)
+Patent applications
+Green Plastics
+Patent classification
+Machine learning
+Natural Language Processing (NLP)
+Artificial Intelligence (AI)
+Tensorflow
+Term-Frequency - Inverse Document Frequency (TF-IDF)
+Multinomial Bayes algorithm
+Multi-Layer Perceptron (MLP)
+Text classification
+Hyperparameters
+Callbacks
+Long Short Term Memory Networks (LSTMs)
+One-Dimensional Convolutional Neural Networks (1D-CNN)
+Transformers
+Attention
+Softmax layer
+Renewable energies
+Artificial intelligence
+Augmented reality
+Drug discovery","European patent applications
+European Patent Office (EPO)
+Green Plastics
+Recycled plastics
+Biodegradable materials
+Patent classification
+Machine learning
+Natural Language Processing (NLP)
+Misclassification
+Codefest
+Artificial intelligence (AI) models
+Patent dataset
+Binary classification
+Tensorflow
+Tokenisation
+Vectorisation
+Word Embeddings
+Term-Frequency - Inverse Document Frequency (TF-IDF)
+Multinomial Bayes algorithm
+Multi-Layer Perceptron (MLP)
+Hyperparameters
+Callbacks
+Long Short Term Memory Networks (LSTMs)
+One-Dimensional Convolutional Neural Networks (1D-CNN)
+Transformers
+Attention
+Softmax layer ",0.85,0.95,0.6,0.4,0.7,0.5,0.65,0.55,0.6,0.75,1,0.05,0.05,0.05,0.564808309078217,0.654622852802277,0.335433281958103,0.174659967422485,0.64908641576767,0.336655348539352,0.320667326450348,0.573231816291809,1,0.563851833343506
+"10",10,10,"CNNs for the Cosmic Dawn","This exemplar will explain and demonstrate the steps required to go from image-based data to a finished Convolutional Neural Network (CNN) pipeline, which can be used to extract relevant information from the images. While demonstrating how to solve this machine learning problem, I will also explain how to prototype code in Jupyter notebooks. I will start by explaining how to analyse the statistics of the data to create appropriate training, validation and testing sets; here I will emphasize the importance of uniform parameter spaces. The exemplar will then go through the process of setting up the architecture of the network and how to train it. Once the network is trained I will discuss what possible next steps are, and which is the most appropriate. Finally, I will go through how to convert the code prototyped in Jupyter notebooks into a useable package
+
+Learning Outcomes
+Use a Jupyter Lab notebook to prototype code
+Use tensorflow to create a CNN to infer parameters from simulated images
+Convert that prototyped code into a runable script that can then be scaled up to be run on something like the HPC","Academic
+Familiarity with Python 3
+Have used Jupyter Lab before
+Very little command line knowledge
+System
+4GB of disk space for datasets
+Python 3.11 or newer
+Access to the HPC (optional)","Convolutional Neural Network (CNN)
+Jupyter notebooks
+Machine learning
+Image-based data
+Data analysis
+Training sets
+Validation sets
+Testing sets
+Uniform parameter spaces
+TensorFlow
+HPC (High-Performance Computing)
+Prototyping code
+Code conversion
+Scripting","Image-based data
+Convolutional Neural Network (CNN) pipeline
+Extract relevant information
+Machine learning problem
+Prototype code
+Jupyter notebooks
+Data statistics analysis
+Training sets
+Validation sets
+Testing sets
+Uniform parameter spaces
+Network architecture
+Train network
+Next steps
+Convert code
+Usable package
+Jupyter Lab notebook
+Tensorflow
+Simulated images
+Runnable script
+High-Performance Computing (HPC)",0.85,0.95,0.4,0.3,0.75,0.5,0.65,0.45,0.55,0.6,1,0.05,0.05,0.05,0.315932512283325,1,0.180342637002468,0.000167236808920279,0.16998103260994,0.176827609539032,0.315067827701569,0.229364067316055,0.239630132913589,0.193499207496643
+"11",11,11,"Solving SDEs with Euler-Maruyama","This code is part of the Research Computing and Data Science Examples (ReCoDE) projects. The project consists of a Python class containing the Euler-Maruyama (EM) method for the numerical solution of a Stochastic Differential Equation (SDE). SDEs describe the dynamics that govern the time-evolution of systems subjected to deterministic and random influences. They arise in fields such as biology, physics or finance to model variables exhibiting uncertain and fluctuating behaviour. Being able to numerical solve an SDE is essential for these fields, especially if there is no closed-form solution. This project provides an object-oriented implementation of the EM method. Throughout the project, it is emphasised the benefits that class encapsulation provides in terms of code modularity and re-usability.
+
+Learning Outcomes
+This project is designed for Master's and Ph.D. students with basic Python knowledge and need to solve SDEs for their research projects. After going through this project, students will:
+
+Understand how to solve an SDE using the EM method.
+Learn to encapsulate the EM method code into a Python class.
+Explore how to parallelise the code to improve solution speed.","System
+Program	Version
+Git	>= 2.41
+Python	>= 3.9
+Dependencies
+Packages	Version
+poetry	>= 1.4.*
+numpy	>= 1.24.*
+matplotlib	>= 3.7.*
+jupyter	>= 1.0.*
+joblib	>= 1.2.*","Research Computing
+Data Science
+Euler-Maruyama (EM) method
+Stochastic Differential Equation (SDE)
+Numerical solution
+Python
+Object-oriented implementation
+Class encapsulation
+Code modularity
+Re-usability
+Master's students
+Ph.D. students
+Basic Python knowledge
+SDEs
+Research projects
+Parallelisation
+Solution speed","Research Computing and Data Science Examples (ReCoDE) projects
+Python class
+Euler-Maruyama (EM) method
+Numerical solution
+Stochastic Differential Equation (SDE)
+Deterministic influences
+Random influences
+Time-evolution of systems
+Biology
+Physics
+Finance
+Uncertain and fluctuating behaviour
+Closed-form solution
+Object-oriented implementation
+Class encapsulation
+Code modularity
+Code re-usability
+Master's students
+Ph.D. students
+Basic Python knowledge
+Solve SDEs
+Parallelise code
+Improve solution speed",0.8,0.9,0.3,0.25,0.85,0.4,0.7,0.5,0.55,0.45,1,0.05,0.05,0.05,0.3143390417099,1,0.372024208307266,0.0633856654167175,0.335419237613678,0.199398539960384,0.497883796691895,0.441467583179474,0.158157646656036,0.323390394449234
+"12",12,12,"Multi-channel Python GUI","In this course, you will learn how to create a GUI program to display and analyze data in real-time with Python. The GUI program is designed to display and analyze data from a file. The GUI program is also designed to display data from a data acquisition system through serial port communication. The GUI program is developed using dearpygui, a GPU-based Python GUI framework.
+
+By the end of this course, you will be able to design a GUI program looks like the above picture, which can display data from a file or a data acquisition system in real-time. You will also be able to select the file to display, select the channels to display, change the color of the lines, and start, stop, and pause the display. You will also learn how to add data analysis functions to the GUI program and display analysis results in real-time.
+
+Day 1: Develop familiarity with frameworks and key components for GUI design.
+
+Contents:
+
+You will be provided with sample codes to familiarize commonly used GUI widgets. You can design whatever you want using provided widgets. (Sample data will be provided) * Outcomes:
+
+You will be able to design a GUI with different kinds of widgets including buttons, text boxes, figures and so on.
+
+Day 2: Design a GUI to dynamically display data with single channel.
+
+Contents:
+
+You will be provided a template with sample modularized codes to illustrate how to add a figure on GUI and make it work. You will also learn how to display data from a file with single channel.
+
+Outcomes:
+
+You will learn how to update data in a plot widget and be able to design a GUI to display data with single channel.
+
+Day 3: Design a GUI to dynamically display data with multiple channels.
+
+Contents:
+You will extend the work in step 2 by referring to another template provided to add two more channles. You will learn how to add multiple figures on GUI and make them work. You will also learn how to display data from a file with multiple channels.
+
+Outcomes:
+
+You will gain an understanding of tags in dearpygui and be able to update different widgets according to their tags. You will also be able to design a GUI to display data with multiple channels.
+
+Day 4: Design a GUI with control panel to control the display.
+
+Contents:
+
+You will be provided a new template with modularized functions and control widgets as well as directive instructions for adding control widgets used in GUI design. Four control functions will be provided as examples, including select file to display, start, stop and pause the display, select channels to be displayed, and change the color of lines.
+
+Outcomes:
+
+You will have an understanding of the interactions between different widgets, taking inputs from users and updating widgets accordingly.
+
+Day 5: Extension: Serial Port Communication
+
+Contents:
+
+You will be provided a new template with modularized functions and control widgets to display data from a data acquisition system through serial port communication. You will learn how to display data from a real-time data acquisition system with serial communication.
+
+Outcomes:
+
+You will gain basic and necessary knowledge on how to use serial port communication with Python. You will also be able to design a GUI that displays data from a data acquisition system in real-time though serial port communication.","Software
+Python 3.9.7
+VisualStudio Code (newest version)
+Python packages that need to be installed will be introduced in corresponding sections.
+
+You will use virual serial port emulator to and a serial port monitor for Day 5. An instruction will be provided in Day 5.
+
+Hardware
+A computer with Windows 10 or Windows 11 operating system
+You can use a computer with Mac/Linux operating system. However, the virtual serial port emulator for day 5 only supports Windows operating system.","GUI (Graphical User Interface)
+Python
+DearPyGui
+Data Acquisition System
+Serial Port Communication
+Real-time Data
+Data Analysis
+File Input
+Data Visualization
+Widgets (e.g. buttons, text boxes, figures)
+Modularized Codes
+Templates
+Tags
+Control Panel
+User Input
+Interactions between Widgets
+Serial Communication
+Data Analysis Functions
+Analysis Results
+Real-time Display","GUI program
+Real-time data analysis
+Python
+Data acquisition system
+Serial port communication
+dearpygui
+GPU-based Python GUI framework
+Select file
+Select channels
+Change color of lines
+Start, stop, pause display
+Data analysis functions
+Sample codes
+GUI widgets
+Buttons
+Text boxes
+Figures
+Single channel
+Multiple channels
+Tags in dearpygui
+Control panel
+Modularized functions
+Control widgets
+Serial port communication
+Training sets
+Validation sets
+Testing sets
+Uniform parameter spaces
+Network architecture
+Train network
+Next steps
+Convert code
+Usable package
+Jupyter Lab notebook
+Tensorflow
+Simulated images
+Runnable script
+High-Performance Computing (HPC)",0.85,0.95,0.3,0.25,0.7,0.4,0.6,0.45,0.55,0.5,1,0.05,0.05,0.05,0.841890692710876,1,0.61717264354229,0.0546354465186596,0.408968895673752,0.596184909343719,0.567866086959839,0,0.351365178823471,0.304984211921692
+"13",13,13,"RNA-seq Analysis","The RNA-seq analysis exemplar involves the development of a pipeline for processing large volumes of biological data. The development of next generation sequencing technologies has facilitated a systems-level approach to biological and biomedical research. In particular, RNA sequencing (RNA-seq) has become a ubiquitous method for gene expression profiling. However, the colossal datasets produced by this method pose a new challenge for life science researchers, who commonly have little statistical or computational training. The processing of sequencing data commonly requires the development of custom workflows that can run in parallel on university computing clusters. Furthermore, the quality control and statistical analysis of these data requires specialist knowledge and purpose-built software packages.
+
+This project demonstrates the development of a pipeline for processing RNA-seq datasets on the computing clusters, such as the Imperial College Research Computing Service (RCS), and basic statistical analysis of the normalised data. This will involve:
+
+Quality control and trimming of raw RNA-seq reads
+Alignment of reads to the human reference genome
+Conversion of aligned reads to a matrix of gene counts
+Downstream statistical analysis:
+Data normalisation
+Unsupervised analysis (e.g. PCA)
+Differential expression and enrichment using edgeR
+
+Learning Outcomes
+Upon completion of this tutorial, students will be able to:
+
+parallelise bioinformatics tools on computing clusters, such as the Imperial RCS
+develop a reproducible pipeline
+Tools used achieve this as part of the exemplar include:
+
+Nextflow, a workflow management system that makes it easy to develop data-driven pipelines.
+Conda, an package management system that allows you to share your local environment with others.
+Docker, an application for packaging dependencies into a virtual container.
+Git/GitHub, a version control system that integrates with nextflow to make pipelines shareable.
+Continous integration, a practice of automatic code testing.","Academic
+Familiarity with bash (A course such as ""The Linux Command Line for Scientific Computing"", hosted by the Imperial Research Computing & Data Science Team, would be provide a suitable background.)
+Familiarity with R programming language
+Familiarity with computing clusters
+System
+Program	Version
+R	Any
+Anaconda	>=4.13.0","RNA-seq
+Next-generation sequencing
+Bioinformatics
+Computational biology
+Data analysis
+Statistical analysis
+Gene expression profiling
+Data processing
+Workflow management
+Pipeline development
+Computing clusters
+Parallel processing
+Quality control
+Alignment
+Gene counts
+Data normalization
+Unsupervised analysis
+Differential expression
+Enrichment analysis
+edgeR
+Nextflow
+Conda
+Docker
+Git/GitHub
+Continuous integration","RNA-seq analysis
+pipeline
+biological data
+next generation sequencing technologies
+systems-level approach
+biological research
+biomedical research
+RNA sequencing (RNA-seq)
+gene expression profiling
+colossal datasets
+life science researchers
+statistical training
+computational training
+custom workflows
+university computing clusters
+quality control
+statistical analysis
+specialist knowledge
+software packages
+Imperial College Research Computing Service (RCS)
+quality control and trimming
+raw RNA-seq reads
+alignment
+human reference genome
+gene counts
+data normalisation
+unsupervised analysis
+PCA
+differential expression
+enrichment
+edgeR
+parallelise bioinformatics tools
+reproducible pipeline
+Nextflow
+Conda
+Docker
+Git/GitHub
+continuous integration",0.75,0.9,0.85,0.5,0.8,0.4,0.65,0.55,0.6,0.85,0.05,1,0.05,0.05,0.276405990123749,1,0.173586644232273,0.0112853348255157,0.170933067798615,0.311017625033855,0.308199346065521,0.202392667531967,0.111584082245827,0.3265320956707
+"14",14,14,"Bayesian Inference for SARS-CoV-2 Transmission Modelling","The aim of this exemplar is to demonstrate how to design and fit a mathematical model of disease transmission to real data, in order to estimate key epidemiological parameters and inform public health responses. Specifically, we will model the emergence of the SARS-CoV-2 variant of concern Omicron in Gauteng, South Africa. To fit the model, we use Stan, a free, accessible and efficient Bayesian inference software. Adopting a Bayesian approach to model fitting allows us to account for uncertainty, which is especially important when modelling a new pathogen or variant. The transmission model uses compartments to track the populations movement between states, for instance from susceptible to infectious. By fitting a compartmental model to epidemiological surveillance data, we will recreate the transmission dynamics of Omicron and other circulating variants, and estimate key epidemiological parameters. Together these estimates are useful for guiding policy, especially in the early stages of an emerging variant or pathogen, when there are lots of unknowns.
+
+Learning outcomes
+Upon completion of this tutorial, students will be able to:
+
+design an infectious disease compartmental model to answer public health questions.
+compare methods of solving ODE using Stan.
+write a Stan model to fit an infectious disease model.
+interpret Stan model diagnostics and implement appropriate solutions.
+structure R code into files based on functionality.
+write tests in R to check code.","Academic
+Required: - Experience using R, for instance the Graduate school course R programming. - Knowledge of Bayesian statistics, for instance, the textbook A students guide to Bayesian statistics by Ben Lambert is a great place to start. Chapter 16 also introduces Stan. - Download Rstan following these instructions.
+
+Beneficial: - Some familiarity with Stan. - Experience of infectious disease modelling.
+
+System
+
+R","Disease transmission
+Mathematical modeling
+Epidemiological parameters
+Public health responses
+SARS-CoV-2
+Omicron variant
+Bayesian inference
+Stan software
+Compartmental model
+Epidemiological surveillance data
+Transmission dynamics
+Policy guidance
+Infectious disease modeling
+ODE (Ordinary Differential Equation) solving
+R programming language
+Code organization
+Code testing","mathematical model
+disease transmission
+real data
+epidemiological parameters
+public health responses
+SARS-CoV-2
+Omicron
+Gauteng, South Africa
+Stan
+Bayesian inference
+uncertainty
+new pathogen
+variant
+compartments
+susceptible to infectious
+epidemiological surveillance data
+transmission dynamics
+policy
+emerging variant
+infectious disease compartmental model
+ODE (ordinary differential equations)
+Stan model
+Stan model diagnostics
+R code
+functionality
+tests in R",0.3,0.7,0.8,0.9,1,0.4,0.8,0.5,0.4,0.8,0.05,1,0.05,0.05,0.150080308318138,0.193691000342369,0.187004115432501,0.756953179836273,0.453741848468781,0.120760064572096,0.392127573490143,0.178178280591965,0,0.0905605405569077
+"15",15,15,"1-Dimensional Neutron Diffusion Solver","This code is part of the Research Computing and Data Science Examples (ReCoDE) project. The code itself is a 1-dimensional neutron diffusion solver written in Fortran in an object-oriented format. The example will focus on features of the code that can be used as a teaching aid to give readers some experience with the concepts such that they can implement them in the exercises or directly in their own codes. An understanding of neutron diffusion and reactor physics is not required for this example, but a discussion of the theory can be found in the bottom section of this readme.
+
+Learning Outcomes
+Compiled Codes and Makefiles
+Compiler Directives
+Object-Oriented Programming
+Reading input data from file
+Generating output files
+Using ParaView to visualise numerical results
+Solving mathematical problems
+Discretisation of a spatial dimension
+Optimised data storage
+Using build tools CMake and fpm
+Incorporating external libraries (PETSc)","Academic
+Entry level researcher with basic knowledge of Fortran syntax. For a Fortran crash course see here
+
+System
+Program	Version
+Anaconda	>=4.13.0","Research Computing
+Data Science
+Fortran
+Object-Oriented Programming
+Neutron Diffusion
+Reactor Physics
+Compiler Directives
+Makefiles
+ParaView
+Numerical Results
+Mathematical Problems
+Discretisation
+Optimised Data Storage
+CMake
+Fpm
+PETSc","Research Computing and Data Science Examples (ReCoDE)
+1-dimensional neutron diffusion solver
+Fortran
+object-oriented format
+teaching aid
+neutron diffusion
+reactor physics
+theory discussion
+compiled codes
+Makefiles
+compiler directives
+object-oriented programming
+reading input data
+generating output files
+ParaView
+visualise numerical results
+solving mathematical problems
+discretisation
+spatial dimension
+optimised data storage
+build tools
+CMake
+fpm
+external libraries
+PETSc",0.85,0.9,0.3,0.25,0.8,0.4,0.75,0.5,0.6,0.55,0.05,0.05,1,0.05,0.347758144140244,0.999999940395355,0.351280696690083,0.0633856579661369,0.501802027225494,0.199398525059223,1,0.54390949010849,0.158589199185371,0.370673924684525
+"16",16,16,"Markov Chain Monte Carlo for fun and profit","This is an exemplar project designed to showcase best practices in developing scientific software as part of the ReCoDE Project at Imperial College London.
+
+You do not need to know or care about Markov Chain Monte Carlo for this to be useful to you.
+
+Rather this project is primarily designed to showcase the tools and practices available to you when developing scientific software projects. Maybe you are a PhD student just starting, or a researcher just about to embark on a larger scale software project - there should be something interesting here for you.
+
+Learning Outcomes
+Creating virtual environments using Anaconda
+Plotting data using Matplotlib
+Improving code performance with numba and Just-in-time compilation
+Packaging Python projects into modules
+Writing a simple Monte Carlo simulation using numba and numpy
+Using Test Driven Development (TDD) to test your code
+Creating unittests with pytest
+Calculating the coverage of your codebase
+Visualising coarse and detailed views of the coverage in your codebase
+Creating property-based tests with hypothesis
+Creating regression tests
+Using autoformatters like black and other development tools
+Improving performance using generators and yield
+Making a reproducible Python environment using Anaconda
+Documenting your code using sphinx
+Writing docstrings using a standardised format","Academic
+Entry level researcher with basic knowledge of Python.
+
+Complementary Resources to the exemplar:
+
+The Turing Way has tons of great resources on the topics discussed here.
+Intermediate Research Software Development in Python
+System
+Program	Version
+Python	>= 3.7
+Anaconda	>= 4.1","Scientific software
+ReCoDE Project
+Imperial College London
+Markov Chain Monte Carlo
+Anaconda
+Matplotlib
+Numba
+Just-in-time compilation
+Packaging
+Python projects
+Modules
+Monte Carlo simulation
+Test Driven Development (TDD)
+Unittests
+Pytest
+Code coverage
+Property-based tests
+Hypothesis
+Regression tests
+Autoformatters
+Black
+Development tools
+Generators
+Yield
+Reproducible Python environment
+Sphinx
+Docstrings","exemplar project
+best practices
+scientific software
+ReCoDE Project
+Imperial College London
+Markov Chain Monte Carlo
+tools and practices
+PhD student
+researcher
+scientific software projects
+virtual environments
+Anaconda
+plotting data
+Matplotlib
+code performance
+numba
+Just-in-time compilation
+packaging Python projects
+modules
+Monte Carlo simulation
+numpy
+Test Driven Development (TDD)
+unittests
+pytest
+code coverage
+visualising coverage
+property-based tests
+hypothesis
+regression tests
+autoformatters
+black
+development tools
+generators
+yield
+reproducible Python environment
+documenting code
+sphinx
+docstrings
+standardised format",0.85,0.95,0.4,0.3,0.8,0.45,0.7,0.5,0.55,0.6,1,0.05,0.05,0.05,0.654652178287506,0.565505146980286,0.561387225985527,0.133955493569374,0.446906477212906,0.60657462477684,0.602115750312805,0.584746539592743,1,0.3769391477108
+"17",17,17,"PyTorch for end-to-end training of a deep learning model","Recode Perceptions is a PyTorch implementation of a deep convolutional neural network model trained on Places365 data.
+
+This model is trained on a subset of 100K images which have outcome labels that are associated to factors which are relevant for environmental health.
+
+Learning Outcomes
+Be aware of different types of Computer Vision tasks
+Load an image dataset in PyTorch
+Be able to explain what a convolutional layer does and how it's different from a fully-connected layer
+Identify different components of a CNN
+Load a pre-trained model in PyTorch
+Be able to use PyTorch to train a model on a dataset
+Iterate on design choices for model training","System
+Program	Version
+Python	>= 3.7
+Anaconda	>= 4.1","Recode Perceptions
+PyTorch
+Deep Convolutional Neural Network
+Places365 data
+Environmental health
+Computer Vision
+Convolutional layer
+Fully-connected layer
+CNN (Convolutional Neural Network)
+Model training","Recode Perceptions
+PyTorch
+deep convolutional neural network
+Places365 data
+100K images
+outcome labels
+environmental health
+Computer Vision tasks
+image dataset
+convolutional layer
+fully-connected layer
+CNN (Convolutional Neural Network)
+pre-trained model
+train a model
+design choices
+model training",0.85,0.95,0.6,0.5,0.7,0.4,0.65,0.55,0.6,0.75,1,0.05,0.05,0.05,0.388451486825943,0.864277958869934,0.175796493887901,0.661667421460152,0.164072379469872,0.320668235421181,0.28646644949913,0.33063155412674,0.292392581701279,0.371296048164368

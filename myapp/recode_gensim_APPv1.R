@@ -3,7 +3,7 @@ library(plotly)
 library(dplyr)
 
 # Load the data from the fixed CSV file
-recode_data=read.csv("updated_recode_project_keywords_20240926_gensim2.csv", stringsAsFactors = F)
+recode_data=read.csv("~/Downloads/updated_recode_project_keywords_20240926_gensim2.csv", stringsAsFactors = F)
 
 
 similarity_matrix <- recode_data %>% 
