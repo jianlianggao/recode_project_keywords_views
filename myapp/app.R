@@ -27,7 +27,7 @@ ui <- fluidPage(
       selectInput("project", "Select a Project:", choices = similarity_matrix$title),
       checkboxGroupInput(
         inputId = "research",
-        label = "Choose Your Research (one or more):",
+        label = "Your Research:",
         choices = names(similarity_matrix)[-1]
       ),
       #textInput("research", "Your research:"),
@@ -41,7 +41,7 @@ ui <- fluidPage(
       ),
       fluidRow(
         column(12, textOutput("selected_values")),
-        column(12, textOutput("recommendations"))
+        column(12, uiOutput("recommendations"))
         #column(12, textOutput("enteredText2")),
         #column(12, verbatimTextOutput("result"))
       )
@@ -115,10 +115,11 @@ server <- function(input, output, session) {
     checked = paste(input$research, collapse = ", ")
     checked = strsplit(checked, ", ")[[1]]
     if (length(checked)>0) {
-      paste("Recommended Projects:", similarity_matrix %>% 
-              arrange(desc(across(all_of(checked)))) %>% 
-              select(title) %>% 
-              head(3))
+      output_titles = (similarity_matrix %>% 
+                         arrange(desc(across(all_of(checked)))) %>% 
+                         select(title) %>% 
+                         head(3))$title
+      HTML(paste("Recommended Projects: <br>", HTML(paste(output_titles, collapse = "<br> "))))
     }
     
   })
