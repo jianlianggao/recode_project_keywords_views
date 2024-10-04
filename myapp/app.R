@@ -24,11 +24,28 @@ ui <- fluidPage(
   titlePanel("Project Similarity Radar Chart"),
   sidebarLayout(
     sidebarPanel(
-      selectInput("project", "Select a Project:", choices = similarity_matrix$title)
+      selectInput("project", "Select a Project:", choices = similarity_matrix$title),
+      checkboxGroupInput(
+        inputId = "research",
+        label = "Choose options:",
+        choices = names(similarity_matrix)[-1]
+      ),
+      #textInput("research", "Your research:"),
+      #actionButton("calculate", "Calculate Similarity"),
+      #verbatimTextOutput("result")
     ),
     mainPanel(
-      plotlyOutput("radarPlot"),
-      plotlyOutput("radarPlot_lang")
+      fluidRow(
+        column(6, plotlyOutput("radarPlot")),
+        column(6, plotlyOutput("radarPlot_lang"))
+      ),
+      fluidRow(
+        column(12, textOutput("selected_values")),
+        column(12, textOutput("recommendations"))
+        #column(12, textOutput("enteredText2")),
+        #column(12, verbatimTextOutput("result"))
+      )
+      
     )
   )
 )
@@ -89,10 +106,28 @@ server <- function(input, output, session) {
       )
   })
   
+  
+  output$selected_values <- renderText({
+    paste("You selected:", paste(input$research, collapse = ", "))
+  })
+  
+  output$recommendations <- renderText({
+    checked = paste(input$research, collapse = ", ")
+    checked = strsplit(checked, ", ")[[1]]
+    if (length(checked)>0) {
+      paste("Recommended Projects:", similarity_matrix %>% 
+              arrange(desc(across(all_of(checked)))) %>% 
+              select(title) %>% 
+              head(3))
+    }
+    
+  })
+  
   # Trigger initial rendering
   observe({
     updateSelectInput(session, "project", selected = similarity_matrix$title[2])
     updateSelectInput(session, "project", selected = similarity_matrix$title[1])
+    #print(input$choices)
   })
   
 }
@@ -106,6 +141,5 @@ shinyApp(ui = ui, server = server)
 # organize code in myapp subdir (rename this script to app.R) and run the following command in console
 # shinylive::export(appdir = "myapp", destdir = "docs")
 # upload to GitHub repo and set page to the docs folder
-
 
 
