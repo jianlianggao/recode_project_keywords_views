@@ -27,7 +27,7 @@ ui <- fluidPage(
       selectInput("project", "Select a Project:", choices = similarity_matrix$title),
       checkboxGroupInput(
         inputId = "research",
-        label = "Choose options:",
+        label = "Choose Your Research (one or more):",
         choices = names(similarity_matrix)[-1]
       ),
       #textInput("research", "Your research:"),
